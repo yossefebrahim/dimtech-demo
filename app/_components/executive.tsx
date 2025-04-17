@@ -23,7 +23,7 @@ const Executive = () => {
     {
       name: "Geoffrey Ducournau",
       role: "Chief of R&D",
-      img: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
+      img: "/assets/images/teams/geffory.png",
       linkedinLink: "https://www.linkedin.com/in/geoffreyducournau",
 
       description:
@@ -32,7 +32,7 @@ const Executive = () => {
     {
       name: "Daniel Melhem",
       role: "Founder - CEO",
-      img: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
+      img: "/assets/images/teams/daniel.png",
       linkedinLink: "https://www.linkedin.com/in/daniel-melhem-phd-1656034",
 
       description:
@@ -41,7 +41,7 @@ const Executive = () => {
     {
       name: "Ramzi Shalak",
       role: "CGDO",
-      img: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
+      img: "/assets/images/teams/ramzi.png",
       linkedinLink: "https://www.linkedin.com/in/ramzi-shalak-35b53125",
 
       description:
@@ -50,7 +50,7 @@ const Executive = () => {
     {
       name: "Dominique Larue",
       role: "CIS",
-      img: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
+      img: "/assets/images/teams/domonic.png",
       linkedinLink: "https://www.linkedin.com/in/dominique-larue-81b0a434",
 
       description:
@@ -100,8 +100,13 @@ const Executive = () => {
                 key={index}
               >
                 {/* Card Image */}
-                <div className="card-img">
-                  <img src={teamList[0]?.img} alt={team?.name} />
+                <div className="card-img h-[300px]">
+                  <img
+                    src={team?.img}
+                    alt={team?.name}
+                    width={300}
+                    height={300}
+                  />
                 </div>
 
                 {/* Card Tag */}
