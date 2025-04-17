@@ -2,7 +2,10 @@
 import React, { useState, Key, useEffect } from "react";
 import { Card, CardBody, Tab, Tabs } from "@heroui/react";
 import { motion } from "framer-motion";
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
+
+// Dynamically import Lottie with no SSR
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 interface AnimationData {
   v: string;
@@ -32,8 +35,10 @@ const Services = () => {
     Technology: null,
     Advisory: null,
   });
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
     const loadAnimations = async () => {
       try {
         const [research, technology, advisory] = await Promise.all([
@@ -72,8 +77,21 @@ const Services = () => {
     }
   };
 
-  if (!selectedDiagram) {
-    return null; // or a loading spinner
+  if (!isClient || !selectedDiagram) {
+    return (
+      <div className="container py-24 mt-[200px] md:mt-0" id="services">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-16 min-h-[700px] md:h-[700px]">
+          <div className="flex w-full flex-col mt-5">
+            <h3 className="text-white text-size40 font-extrabold leading-[125%]">
+              Services
+            </h3>
+            <p className="text-size16 md:text-size18 opacity-[.75] text-white md:max-w-[65%] mt-3 font-medium leading-[150%] mb-8">
+              Loading...
+            </p>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   return (
