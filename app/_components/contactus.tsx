@@ -249,7 +249,7 @@ const Contactus = () => {
             <span className="flex-1 text-gray-700">{item.value}</span>
           </a>
         ) : (
-          <div className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
+          <div className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
             {item.icon}
             <span className="flex-1 text-gray-700">{item.value}</span>
           </div>
@@ -302,7 +302,7 @@ const Contactus = () => {
                 tabList: "flex justify-between w-full ",
                 tab: "h-[50px]  data-[hover=true]:bg-[#493D99] data-[hover=true]:opacity-100 data-[hover=true]:rounded-sm transition-colors duration-200",
                 tabContent: "text-white lg:text-size18 text-size14",
-                panel: "w-full ",
+                panel: "w-full",
               }}
             >
               <Tab key="paris" title="Paris">
