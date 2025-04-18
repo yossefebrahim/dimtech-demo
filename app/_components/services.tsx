@@ -155,7 +155,7 @@ const Services = () => {
                         <div>
                           <div>
                             <h6 className="text-size18 font-extrabold">
-                              AI-Powered Investing :
+                              AI-Powered Investing
                             </h6>
                             <p className="text-size14 font-normal text-[#D9D9D9]">
                               Dimtech uses data, machine learning, and
@@ -167,7 +167,7 @@ const Services = () => {
                           </div>
                           <div className="mt-4">
                             <h6 className="text-size18 font-extrabold ">
-                              Seamless Deployment & Scaling :
+                              Seamless Deployment & Scaling
                             </h6>
                             <p className="text-size14 font-normal text-[#D9D9D9]">
                               Validated strategies undergo backtesting, paper
@@ -182,7 +182,7 @@ const Services = () => {
                         <div>
                           <div>
                             <h6 className="text-size18 font-extrabold">
-                              DeepFi :
+                              DeepFi
                             </h6>
                             <p className="text-size14 font-normal text-[#D9D9D9]">
                               Developed by Dimtech, DeepFi is a multi-strategy
@@ -193,7 +193,7 @@ const Services = () => {
                           </div>
                           <div className="mt-4">
                             <h6 className="text-size18 font-extrabold">
-                              Flexible Trading Solutions :
+                              Flexible Trading Solutions
                             </h6>
                             <p className="text-size14 font-normal text-[#D9D9D9]">
                               Supporting both low- and high-frequency trading,
@@ -204,7 +204,7 @@ const Services = () => {
                           </div>
                           <div className="mt-4">
                             <h6 className="text-size18 font-extrabold">
-                              Robust Monitoring & Risk Management :
+                              Robust Monitoring & Risk Management
                             </h6>
                             <p className="text-size14 font-normal text-[#D9D9D9]">
                               A real-time monitoring and alert system, combined
@@ -218,7 +218,7 @@ const Services = () => {
                         <div>
                           <div>
                             <h6 className="text-size18 font-extrabold">
-                              R&D Support for Finance :
+                              R&D Support for Finance
                             </h6>
                             <p className="text-size14 font-normal text-[#D9D9D9]">
                               Our R&D teams provide expert solutions, crafting
@@ -230,7 +230,7 @@ const Services = () => {
                           </div>
                           <div className="mt-4">
                             <h6 className="text-size18 font-extrabold">
-                              Our expertise includes, but not limited to:
+                              Our expertise includes, but not limited to
                             </h6>
                             <ul className="text-size14 font-normal text-[#D9D9D9] list-disc mx-8">
                               <li className="mt-2">

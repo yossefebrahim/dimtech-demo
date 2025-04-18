@@ -16,6 +16,10 @@ const Footer = () => {
       href: "#services",
     },
     {
+      name: "Research",
+      href: "#research",
+    },
+    {
       name: "History",
       href: "#history",
     },
@@ -97,7 +101,8 @@ const Footer = () => {
 
         <div className="sm:flex sm:items-center sm:justify-center mt-8">
           <p className=" text-white text-center text-sm text-gray-500 sm:mt-0 sm:text-right">
-            &copy;Copyright {currentYear}. All Rights Reserved by ClarityUI.
+            © Copyright {currentYear}. All Rights Reserved by ClarityUI. Member
+            of ANACOFI – ORIAS N° <a href="tel:19005511">19005511</a>
           </p>
         </div>
       </div>

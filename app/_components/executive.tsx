@@ -22,12 +22,12 @@ const Executive = () => {
   const teamList = [
     {
       name: "Geoffrey Ducournau",
-      role: "Chief of R&D",
+      role: "Lead of R&D",
       img: "/assets/images/teams/geffory.png",
       linkedinLink: "https://www.linkedin.com/in/geoffreyducournau",
 
       description:
-        "integrate and automate trading strategies on theintegrate and automate trading strategies on the",
+        "Drives R&D programs from discovery and prototyping through development, integration, and post-launch monitoring, with a focus on quantitative and digitalization solutions in the finance industry.",
     },
     {
       name: "Daniel Melhem",
@@ -36,7 +36,7 @@ const Executive = () => {
       linkedinLink: "https://www.linkedin.com/in/daniel-melhem-phd-1656034",
 
       description:
-        "integrate and automate trading strategies on theintegrate and automate trading strategies on the",
+        "With 15+ years in quantitative finance, I’m passionate about leveraging innovation,  technology, and creating value for our clients through the fusion of science and business.",
     },
     {
       name: "Ramzi Shalak",
@@ -45,7 +45,7 @@ const Executive = () => {
       linkedinLink: "https://www.linkedin.com/in/ramzi-shalak-35b53125",
 
       description:
-        "integrate and automate trading strategies on theintegrate and automate trading strategies on the",
+        "Leads strategic growth initiatives, forging key partnerships and identifying new market opportunities to drive business expansion.",
     },
     {
       name: "Dominique Larue",
@@ -54,7 +54,7 @@ const Executive = () => {
       linkedinLink: "https://www.linkedin.com/in/dominique-larue-81b0a434",
 
       description:
-        "integrate and automate trading strategies on theintegrate and automate trading strategies on the",
+        "With 30+ years in asset management at UBS, Crédit Agricole, and HSBC, Dominique is responsible for designing quantitative trading strategies to capture alpha.",
     },
   ];
 

@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 const Services = dynamic(() => import("./_components/services"));
+const Research = dynamic(() => import("./_components/research"));
 const Footer = dynamic(() => import("./_components/footer"));
 const Contactus = dynamic(() => import("./_components/contactus"));
 const Community = dynamic(() => import("./_components/community"));
@@ -14,7 +15,7 @@ export default function Home() {
     <div>
       <Intro />
       <Services />
-
+      <Research />
       <History />
 
       <Executive />

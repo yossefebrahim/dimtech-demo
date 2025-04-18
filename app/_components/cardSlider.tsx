@@ -48,9 +48,9 @@ const CardSlider = ({ activeYearIndex }: any) => {
   const cards = [
     {
       year: "2016",
-      title: "Expand Our Footprint in Asia",
+      title: "Leading R&D Advisory Lab",
       description:
-        "Dimtech expanded to Tianjin, China, to strengthen its presence in the Chinese market and provide specialized R&D advisory services in quantitative trading strategies, with a focus on China’s futures commodity market. The firm partners with leading universities, such as Tsinghua University, to advance academic research and foster innovation.",
+        'Founded in 2016 in Paris, Dimtech initially focused on R&D advisory for hedging strategies, swiftly establishing itself as a respected independent research firm and earning prestigious governmental certifications, including the French "Young Innovative Company" designation.',
     },
     {
       year: "2018",
@@ -72,15 +72,15 @@ const CardSlider = ({ activeYearIndex }: any) => {
     },
     {
       year: "2023",
-      title: "Expand Our Footprint in Asia",
+      title: "We Open Share Capital for Growth",
       description:
-        "Dimtech expanded to Tianjin, China, to strengthen its presence in the Chinese market and provide specialized R&D advisory services in quantitative trading strategies, with a focus on China’s futures commodity market. The firm partners with leading universities, such as Tsinghua University, to advance academic research and foster innovation.",
+        "Dimtech partnered with the Institutional Group – Telcel to enhance its IT infrastructure, investing in advanced cloud systems and cutting-edge GPUs to support AI-driven R&D initiatives, particularly in meeting the growing demands of AI algorithm research.",
     },
     {
       year: "2024",
       title: "DeepFi Technology",
       description:
-        "Dimtech leverages AI-driven automation for trading signals, portfolio management, equity research, and financial analysis. It seeks to revolutionize and democratize traditional investment practices spanning corporate finance to financial engineering while making them accessible to all investors. With the deployment of its DeepFi technology in the DIFC, Dubai, Dimtech solidifies",
+        "Dimtech leverages AI-driven automation for trading signals, portfolio management, equity research, and financial analysis. It seeks to revolutionize and democratize traditional investment practices—spanning corporate finance to financial engineering—while making them accessible to all investors. With the deployment of its DeepFi technology in the DIFC, Dubai, Dimtech solidifies its leadership in next-generation financial innovation.",
     },
   ];
 
