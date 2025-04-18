@@ -150,7 +150,7 @@ const Services = () => {
                   viewport={{ once: true }}
                 >
                   <Card className="card-gradient text-white">
-                    <CardBody className="text-white opacity-[.75]">
+                    <CardBody className="text-white opacity-[.75] p-8">
                       {tab === "Research" && (
                         <div>
                           <div>

@@ -9,7 +9,7 @@ const Footer = () => {
   const navList = [
     {
       name: "Home",
-      href: "#home",
+      href: "/",
     },
     {
       name: "Services",
@@ -39,6 +39,13 @@ const Footer = () => {
     href: string
   ) => {
     e.preventDefault();
+    if (href === "/") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      return;
+    }
     const element = document.querySelector(href);
     if (element) {
       const headerOffset = 60;
