@@ -1,12 +1,15 @@
+"use client";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Footer = () => {
+  const router = useRouter();
   const currentYear = new Date().getFullYear();
   const navList = [
     {
       name: "Home",
-      href: "/",
+      href: "#home",
     },
     {
       name: "Services",
@@ -30,6 +33,26 @@ const Footer = () => {
       href: "#contact",
     },
   ];
+
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    e.preventDefault();
+    const element = document.querySelector(href);
+    if (element) {
+      const headerOffset = 60;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <footer className="container py-16">
       <div
@@ -37,18 +60,19 @@ const Footer = () => {
         style={{ backgroundImage: "url('assets/images/footer.png')" }}
       >
         <div className="flex items-center justify-between ">
-          <a className="block" href="/">
+          <Link className="block" href="/">
             <img
               src="assets/images/logo.webp"
               className="w-[160px] object-cover h-[40px]"
             />
-          </a>
+          </Link>
           <ul className="block md:flex items-center gap-6 text-sm ">
             {navList.map((navItem) => (
               <li className="mb-2 md:mb-0 " key={navItem.name}>
                 <Link
                   className="text-white text-size20 font-medium"
                   href={navItem.href}
+                  onClick={(e) => handleScroll(e, navItem.href)}
                 >
                   {navItem.name}
                 </Link>
