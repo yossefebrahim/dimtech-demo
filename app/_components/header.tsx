@@ -37,6 +37,13 @@ const Header = () => {
     href: string
   ) => {
     e.preventDefault();
+    if (href === "/") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      return;
+    }
     const element = document.querySelector(href);
     if (element) {
       const headerOffset = 60;
