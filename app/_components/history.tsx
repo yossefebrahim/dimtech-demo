@@ -211,13 +211,12 @@ const History = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Insight. Data. Clarity. Founded in 2016 in Paris, Dimtech is a
-            pioneering French laboratory dedicated to developing quantitative
-            and systematic trading strategies, alongside advanced electronic
-            trading execution systems. Our foundation rests on state-of-the-art
-            technology and a collaborative culture rooted in academic
-            excellence, driving continuous innovation and delivering consistent
-            success.
+            Founded in 2016 in Paris, Dimtech is a pioneering French laboratory
+            dedicated to developing quantitative and systematic trading
+            strategies, alongside advanced electronic trading execution systems.
+            Our foundation rests on state-of-the-art technology and a
+            collaborative culture rooted in academic excellence, driving
+            continuous innovation and delivering consistent success.
           </motion.p>
         </div>
         <CardSlider activeYearIndex={activeIndex} />

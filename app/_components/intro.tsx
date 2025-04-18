@@ -32,7 +32,7 @@ const Intro = () => {
     {
       title: "Advisory",
       description:
-        "Custom Quant Services: From R&D Solutions to Technology Deployment",
+        "Custom Quant Services From R&D Solutions to Technology Deployment",
     },
   ];
   return (
@@ -50,7 +50,7 @@ const Intro = () => {
           animate={hasAnimated ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          Science-Driven Quantitative Finance
+          Science-Driven Quantitative Solution
         </motion.h2>
         <motion.p
           className="md:text-4xl text-2xl mt-6 text-white font-medium z-40"
