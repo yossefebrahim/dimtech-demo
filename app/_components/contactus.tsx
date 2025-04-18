@@ -62,7 +62,7 @@ const Contactus = () => {
             >
               <Tab key="paris" title="Paris">
                 <Card className="card-gradient text-white">
-                  <CardBody>
+                  <CardBody className="p-8">
                     <ul className="space-y-4 text-md">
                       <li>
                         <a
@@ -121,7 +121,7 @@ const Contactus = () => {
               </Tab>
               <Tab key="tianjin" title="Tianjin">
                 <Card className="card-gradient text-white">
-                  <CardBody>
+                  <CardBody className="p-8">
                     <ul className="space-y-4 text-md">
                       <li>
                         <a
@@ -180,7 +180,7 @@ const Contactus = () => {
               </Tab>
               <Tab key="dubai" title="Dubai">
                 <Card className="card-gradient text-white">
-                  <CardBody>
+                  <CardBody className="p-8">
                     <ul className="space-y-4 text-md">
                       <li>
                         <a
