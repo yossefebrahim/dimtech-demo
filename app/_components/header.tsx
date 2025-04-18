@@ -26,12 +26,31 @@ const Header = () => {
       name: "Community",
       href: "#community",
     },
-
     {
       name: "Contact",
       href: "#contact",
     },
   ];
+
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    e.preventDefault();
+    const element = document.querySelector(href);
+    if (element) {
+      const headerOffset = 60;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -43,7 +62,7 @@ const Header = () => {
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6  py-8">
         <div className="flex items-center justify-between card-gradient md:p-6 px-2 py-1 rounded-md">
           <div className="">
-            <a className="block" href="/">
+            <Link className="block" href="/">
               <span className="sr-only">Home</span>
 
               <img
@@ -56,7 +75,7 @@ const Header = () => {
               >
                 Dimtech
               </h1> */}
-            </a>
+            </Link>
           </div>
 
           <div className="md:flex md:items-center md:gap-12">
@@ -67,6 +86,7 @@ const Header = () => {
                     <Link
                       className="text-white text-size20 font-medium"
                       href={navItem.href}
+                      onClick={(e) => handleScroll(e, navItem.href)}
                     >
                       {navItem.name}
                     </Link>
@@ -145,7 +165,10 @@ const Header = () => {
                         href={link.href}
                         prefetch={false}
                         className="text-[16px] text-white font-medium"
-                        onClick={closeMenu}
+                        onClick={(e) => {
+                          handleScroll(e, link.href);
+                          closeMenu();
+                        }}
                       >
                         {link.name}
                       </Link>

@@ -55,7 +55,7 @@ const Contactus = () => {
                 cursor: "w-full bg-primary text-white  bg-[#F780AC]",
                 base: "text-white",
                 tabList: "flex justify-between w-full ",
-                tab: "h-[50px] ",
+                tab: "h-[50px]  data-[hover=true]:bg-[#493D99] data-[hover=true]:opacity-100 data-[hover=true]:rounded-sm transition-colors duration-200",
                 tabContent: "text-white lg:text-size18 text-size14",
                 panel: "w-full ",
               }}

@@ -104,6 +104,7 @@ const Executive = () => {
                   <img
                     src={team?.img}
                     alt={team?.name}
+                    loading="lazy"
                     width={300}
                     height={300}
                   />
