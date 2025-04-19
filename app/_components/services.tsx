@@ -26,6 +26,7 @@ const Services = () => {
   const [selectedDiagram, setSelectedDiagram] = useState<AnimationData | null>(
     null
   );
+  const [selectedTab, setSelectedTab] = useState<string>("Research");
   const [animations, setAnimations] = useState<{
     Research: AnimationData | null;
     Technology: AnimationData | null;
@@ -62,7 +63,9 @@ const Services = () => {
   }, []);
 
   const handleTabChange = (key: Key) => {
-    switch (key.toString()) {
+    const tabKey = key.toString();
+    setSelectedTab(tabKey);
+    switch (tabKey) {
       case "Research":
         setSelectedDiagram(animations.Research);
         break;
@@ -131,6 +134,7 @@ const Services = () => {
             variant="underlined"
             size="md"
             color="primary"
+            selectedKey={selectedTab}
             onSelectionChange={handleTabChange}
             classNames={{
               cursor: "w-full bg-primary text-white bg-[#F780AC] ",
@@ -263,7 +267,30 @@ const Services = () => {
             ))}
           </Tabs>
         </motion.div>
-        <div className="diagram h-[85%]">
+        <div className="diagram h-[85%] relative">
+          <div className="absolute inset-0 z-10">
+            <div
+              className="h-[10%] w-[45%] mt-[55px] mb-[31%] m-auto"
+              onMouseEnter={() => {
+                setSelectedTab("Advisory");
+                setSelectedDiagram(animations.Advisory);
+              }}
+            ></div>
+            <div
+              className="h-[12.5%] w-[70%] m-auto"
+              onMouseEnter={() => {
+                setSelectedTab("Technology");
+                setSelectedDiagram(animations.Technology);
+              }}
+            ></div>
+            <div
+              className="m-auto h-[40%] w-full"
+              onMouseEnter={() => {
+                setSelectedTab("Research");
+                setSelectedDiagram(animations.Research);
+              }}
+            ></div>
+          </div>
           <Lottie
             animationData={selectedDiagram}
             loop={true}
