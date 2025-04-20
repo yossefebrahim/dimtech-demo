@@ -116,7 +116,7 @@ const Executive = () => {
                   <h6 className="text-size14 font-bold text-white">
                     {team?.name}
                   </h6>
-                  <p className="text-size16 text-[#C8C8C8] font-normal">
+                  <p className="text-size14 text-[#C8C8C8] font-normal">
                     {team?.role}
                   </p>
                 </div>
