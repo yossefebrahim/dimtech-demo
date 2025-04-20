@@ -100,14 +100,14 @@ const Community = () => {
                   viewport={{ once: true }}
                 >
                   <Card className="card-gradient text-white">
-                    <CardBody className="text-white opacity-[.75] p-8">
+                    <CardBody className="text-white opacity-[.75] p-8 h-[200px]">
                       {tab === "Academic" && (
                         <p className="text-size18 font-normal">
                           Since 2018, our partnership with Tsinghua University,
                           University of Montpellier, École des Mines d'Alès, and
                           ESLIV has united researchers from diverse fields
                           through PhD students and CIFRE contracts. This
-                          collaboration fosters a cross-disciplinary research.
+                          collaboration fosters cross-disciplinary research.
                         </p>
                       )}
                       {tab === "Government" && (
