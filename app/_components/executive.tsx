@@ -21,7 +21,16 @@ const Executive = () => {
 
   const teamList = [
     {
-      name: "Geoffrey Ducournau",
+      name: "Daniel Melhem Ph.D",
+      role: "Founder - CEO",
+      img: "/assets/images/teams/daniel.png",
+      linkedinLink: "https://www.linkedin.com/in/daniel-melhem-phd-1656034",
+
+      description:
+        "With 15+ years in quantitative finance, Daniel is passionate about leveraging innovation,  technology, and creating value for our clients through the fusion of science and business.",
+    },
+    {
+      name: "Geoffrey Ducournau Ph.D",
       role: "Lead of R&D",
       img: "/assets/images/teams/geffory.png",
       linkedinLink: "https://www.linkedin.com/in/geoffreyducournau",
@@ -29,15 +38,7 @@ const Executive = () => {
       description:
         "Drives R&D programs from discovery and prototyping through development, integration, and post-launch monitoring, with a focus on quantitative and digitalization solutions in the finance industry.",
     },
-    {
-      name: "Daniel Melhem",
-      role: "Founder - CEO",
-      img: "/assets/images/teams/daniel.png",
-      linkedinLink: "https://www.linkedin.com/in/daniel-melhem-phd-1656034",
 
-      description:
-        "With 15+ years in quantitative finance, I’m passionate about leveraging innovation,  technology, and creating value for our clients through the fusion of science and business.",
-    },
     {
       name: "Ramzi Shalak",
       role: "CGDO",

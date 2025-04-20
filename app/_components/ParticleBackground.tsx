@@ -94,7 +94,7 @@ const ParticleBackground = () => {
             this.pos = p.createVector(x, y);
             this.vel = p5.Vector.random2D();
             this.acc = p.createVector();
-            this.maxSpeed = 6;
+            this.maxSpeed = 3;
             this.target = null;
           }
 
@@ -151,7 +151,7 @@ const ParticleBackground = () => {
             p.noStroke();
             p.fill(162, 196, 235);
             p.rectMode(p.CENTER);
-            p.rect(this.pos.x, this.pos.y, 3, 3);
+            p.rect(this.pos.x, this.pos.y, 1.5, 1.5);
           }
         }
 
