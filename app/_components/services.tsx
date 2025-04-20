@@ -137,7 +137,7 @@ const Services = () => {
             selectedKey={selectedTab}
             onSelectionChange={handleTabChange}
             classNames={{
-              cursor: "w-full bg-primary text-white bg-[#681EE0] ",
+              cursor: "w-full bg-primary text-white bg-[#F780AC] ",
               base: "text-white  ",
               tabList: "flex justify-between w-full ",
               tab: "h-[50px] data-[hover=true]:bg-[#493D99] data-[hover=true]:opacity-100 data-[hover=true]:rounded-sm transition-colors duration-200",

@@ -58,6 +58,7 @@ const Research = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={hasAnimated ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 1.6, ease: "easeOut", delay: 0.2 }}
+            className="h-[80%]"
           />
         </motion.div>
       </div>
