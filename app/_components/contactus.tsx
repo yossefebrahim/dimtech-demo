@@ -34,7 +34,7 @@ const parisContact: ContactItem[] = [
         />
       </svg>
     ),
-    value: "124 rue Réaumur 75002 Paris",
+    value: "124 rue Réaumur - 75002 Paris",
     link: null,
   },
   {
@@ -55,8 +55,8 @@ const parisContact: ContactItem[] = [
         />
       </svg>
     ),
-    value: "daniel.melhem@111dimtech.com",
-    link: "mailto:daniel.melhem@111dimtech.com",
+    value: "Contact@111dimtech.com",
+    link: "mailto:Contact@111dimtech.com",
   },
   {
     type: "phone",
@@ -76,8 +76,8 @@ const parisContact: ContactItem[] = [
         />
       </svg>
     ),
-    value: "+33 170983183",
-    link: "tel:+33170983183",
+    value: "+33 1 70 98 31 83",
+    link: "tel:+33 1 70 98 31 83",
   },
 ];
 
