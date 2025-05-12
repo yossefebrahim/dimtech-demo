@@ -10,7 +10,7 @@ const ParticleBackground = dynamic(() => import("./ParticleBackground"), {
 
 const Intro = () => {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { margin: "-100px" });
+  const isInView = useInView(sectionRef, { margin: "-50px" });
   const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
