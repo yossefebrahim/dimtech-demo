@@ -61,7 +61,7 @@ const Intro = () => {
           Deep Finance
         </motion.p>
         <motion.div
-          className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-16 md:mt-32 mt-8 pt-8"
+          className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-16 md:mt-16 mt-4"
           initial="hidden"
           animate={hasAnimated ? "visible" : "hidden"}
           variants={{
